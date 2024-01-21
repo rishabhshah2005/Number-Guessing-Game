@@ -2,11 +2,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 class NumberGame {
-    int num, tries, range;
-    boolean hint;
-    Random ran = new Random();
+    private int num, tries, range;
+    private boolean hint;
+    private Random ran = new Random();
 
-    public void setDifficulty(Scanner inp) {
+    private void setDifficulty(Scanner inp) {
         System.out.println();
 
         System.out.println("1. Easy (Guess number between 1-10 | Tries: 5)");
@@ -55,7 +55,7 @@ class NumberGame {
         }
     }
 
-    public int[] getFactorArr(int x) {
+    private int[] getFactorArr(int x) {
 
         int cnt = 0;
         for (int i = 2; i < x + 1; i++) {
@@ -74,7 +74,7 @@ class NumberGame {
         return arr;
     }
 
-    public void selectFactor() {
+    private void selectFactor() {
         int arr[] = getFactorArr(num);
         if (!hint) {
 
@@ -93,7 +93,7 @@ class NumberGame {
         }
     }
 
-    public void guess(Scanner inp) {
+    private void guess(Scanner inp) {
         int gue;
         boolean ans = false;
         System.out.println("\nStart guessing!!!");
@@ -147,7 +147,7 @@ class NumberGame {
                     System.out.println("Thank You for playing :)");
                     System.exit(0);
                     break;
-            
+
                 default:
                     break;
             }
