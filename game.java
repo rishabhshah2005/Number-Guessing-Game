@@ -10,8 +10,8 @@ class NumberGame {
         System.out.println();
 
         System.out.println("1. Easy (Guess number between 1-10 | Tries: 5)");
-        System.out.println("2. Medium (Guess number between 1-50 | Tries: 10)");
-        System.out.println("3. Hard (Guess number between 1-100 | Tries: 20)");
+        System.out.println("2. Medium (Guess number between 1-50 | Tries: 5)");
+        System.out.println("3. Hard (Guess number between 1-100 | Tries: 8)");
 
         System.out.print("Enter Difficulty Mode: ");
         int mode = inp.nextInt();
@@ -23,12 +23,12 @@ class NumberGame {
                 break;
 
             case 2:
-                tries = 10;
+                tries = 5;
                 range = 50;
                 break;
 
             case 3:
-                tries = 20;
+                tries = 8;
                 range = 100;
                 break;
 
